@@ -1,0 +1,26 @@
+# --- Python 관련 ---
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+.venv
+env/
+venv/
+ENV/
+
+# --- 배포 및 빌드 관련 ---
+dist/
+build/
+*.egg-info/
+
+# --- 로그 및 데이터 (로봇 데이터 서버 특성상 중요) ---
+*.log
+data/*.csv
+data/*.json
+!data/.gitkeep  # data 폴더 구조만 유지하고 싶을 때 사용
+
+# --- OS 및 에디터 관련 ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
