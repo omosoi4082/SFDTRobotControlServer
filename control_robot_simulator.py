@@ -89,5 +89,5 @@ while True:
         if data:
             payload = json.dumps(data)
             client.publish(TOPIC, payload)
-
-    time.sleep(0.05)  # 20Hz
+            print("sent:", payload)
+    time.sleep(0.05) 
